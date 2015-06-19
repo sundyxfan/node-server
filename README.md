@@ -31,4 +31,4 @@ Hi hawx1993! You've successfully authenticated, but GitHub does not provide shel
 * git push origin master //把本地源码库push到Github上
 * git pull origin master //从Github上pull到本地源码库
 * git config --list //查看配置信息
-* git status //查看项目状态信息
+* git status //查看项目状态信息 
