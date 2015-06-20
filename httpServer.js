@@ -24,6 +24,6 @@ function parsePath (url_str) {
 
 
 server.listen(3000, function () {
-    console.log('this server 127.0.0.1 ^^^' + __dirname);
+    console.log('this server 127.0.0.1 ^^^');
 });
 
