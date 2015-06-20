@@ -17,7 +17,7 @@ module.exports = function static(parent_path) {
 
         fs.readFile(parent_path + path, function (err, data) {
             if (err) {
-                res.statusCode = 404;
+                next();
             }
             else {
                 res.write(data);
