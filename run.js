@@ -12,12 +12,17 @@ app.use(middle01);
 app.use(middle02);
 app.use(static(__dirname + '/public/'));
 
-app.get(function (req, res) {
+app.get('/getroute', function (req, res) {
     res.write('test get request');
     res.end();
 });
 
-app.post(function (req, res) {
+app.get('/test/:id/ok', function (req, res) {
+    res.write('test ok');
+    res.end();
+});
+
+app.post('/postroute', function (req, res) {
     res.write('test post request');
     res.end();
 });
