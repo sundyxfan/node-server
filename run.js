@@ -1,5 +1,6 @@
 var App = require('./lib/App');
 var query = require('./middle/query');
+var post = require('./middle/post');
 /*var middle01 = require('./middle/middle01');
 var middle02 = require('./middle/middle02');*/
 var static = require('./middle/static');
@@ -10,6 +11,7 @@ var app = new App();
 
 // 加入中间件
 app.use(query);
+app.use(post);
 /*app.use(middle01);
 app.use(middle02);*/
 app.use(static(__dirname + '/public/'));
@@ -25,8 +27,22 @@ app.get('/test/:id/ok', function (req, res) {
 });
 
 app.post('/postroute', function (req, res) {
-    res.write('test post request');
+    res.write('test post request: name: ' + req.body.name + '  age:' + req.body.age);
     res.end();
+});
+
+//上传文件
+app.post('/uplodfile', function (req, res) {
+    console.log(req.body);
+    /*var data = '';
+    req.on('data', function (chunk) {
+        data += chunk;
+        console.log(data);
+    });
+
+    req.on('end', function () {
+        console.log(data.toString());
+    });*/
 });
 
 // 监听端口
