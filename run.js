@@ -33,16 +33,8 @@ app.post('/postroute', function (req, res) {
 
 //上传文件
 app.post('/uplodfile', function (req, res) {
-    console.log(req.body);
-    /*var data = '';
-    req.on('data', function (chunk) {
-        data += chunk;
-        console.log(data);
-    });
-
-    req.on('end', function () {
-        console.log(data.toString());
-    });*/
+    console.log('title:' + req.body.title + '  id:' + req.body.id);
+    console.log('上传文件开始FILES内容:' + req.files['uploadfile']);
 });
 
 // 监听端口
