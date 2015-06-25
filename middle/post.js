@@ -48,6 +48,7 @@ function post(req, res, next) {
                 body = body.substring(0, body.length - RN.length / 2);
 
                 if (isFile) {
+                    // 这种方式只适合上传文本形式  对于二进制文件则不适合  因为二进制文件转换为字符串然后再转为二进制 数据会发生变化
                     req.files[fieldName] = new Buffer(body);
                 } else {
                     req.body[fieldName] = body;
