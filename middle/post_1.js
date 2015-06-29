@@ -18,7 +18,7 @@ function post(req, res, next) {
 
     req.on('data', function(chunk) {
         chunk_list.push(chunk);
-    })
+    });
 
     req.on('end', function() {
 
