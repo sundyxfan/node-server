@@ -12,29 +12,32 @@ var redirect = require('./middle/redirect');
 var download = require('./middle/download');
 var static = require('./middle/static');
 var view = require('./middle/view');
+var session =  require('./middle/session');
 
 var PORT = process.env.PORT || 3000;
 
 
 var app = new App();
 
-// 加入中间件
+// 加入中间件 保证中间件顺序
 app.use(query);
 // app.use(post);  // 不支持二进制文件
 app.use(post);
-/*app.use(middle01);
-app.use(middle02);*/
 app.use(text);
 app.use(redirect);
 app.use(download);
+app.use(session);
+// 设置静态资源  包括link script引入的文件
 app.use(static(__dirname + '/public/'));
 app.use(view(__dirname + '/views'));
 
 // 动态模版＋数据
 app.get('/' ,function (req, res) {
+    req.sessioId = req.sessionId || 0;
     res.view('index.html', {
         title: '动态模版渲染',
         name: 'fxp test name',
+        session: req.sessionId,
         list: [{
             name: 'fxp',
             age: 100

@@ -82,7 +82,7 @@ function view(viewPath) {
 
     return function (req, res, next) {
         res.view = function (fileName, locals) {
-            res.write(viewCache[fileName](locals));
+            res.write(viewCache[fileName](locals || {}));
             res.end();
         }
         next();

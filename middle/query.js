@@ -6,7 +6,7 @@ function query(req, res, next) {
     var queryString = url.parse(req.url).query;
     if (queryString) {
         var queryObj = qs.parse(queryString);
-        req.query = queryObj;
+        req.query = queryObj || {};
     }
     next();
 }
