@@ -4,7 +4,8 @@
   "description": "base nodejs framework",
   "main": "run.js",
   "scripts": {
-    "test": "node run"
+    "test": "node run",
+    "task": "node task"
   },
   "repository": {
     "type": "git",
