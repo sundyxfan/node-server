@@ -1,0 +1,26 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "base nodejs framework",
+  "main": "run.js",
+  "scripts": {
+    "test": "node run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sundyxfan/node-server.git"
+  },
+  "keywords": [
+    "nodejs",
+    "framework"
+  ],
+  "author": "xfan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sundyxfan/node-server/issues"
+  },
+  "homepage": "https://github.com/sundyxfan/node-server#readme",
+  "devDependencies": {
+    "shell-task": "^1.0.0"
+  }
+}
