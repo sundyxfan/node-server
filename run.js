@@ -39,11 +39,11 @@ app.get('/' ,function (req, res) {
         name: 'fxp test name',
         session: req.sessionId,
         list: [{
-            name: 'fxp',
+            name: 'fanxiaopeng',
             age: 100
         }, {
             name: 'zhangsan',
-            age: 112
+            age: 101
         }]
     });
 });

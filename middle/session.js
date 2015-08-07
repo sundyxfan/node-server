@@ -27,7 +27,7 @@ function session(req, res, next) {
 
         arr.forEach(function (el) {
             var o = el.split('=');
-            obj[o[0].trim()] = 0[1];
+            obj[o[0].trim()] = o[1];
         });
 
         return obj;
