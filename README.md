@@ -32,3 +32,11 @@ Hi hawx1993! You've successfully authenticated, but GitHub does not provide shel
 * git pull origin master //从Github上pull到本地源码库
 * git config --list //查看配置信息
 * git status //查看项目状态信息 
+* git diff aa.txt // 会具体显示aa.txt修改了那些内容
+* git log // 查看提交日志
+* git log --pretty=online 格式化查看
+* git reset --head HEAD^ // 回退到上一个版本 HEAD^^ 前两版 HEAD~100 前100
+* git checkout -- xx.js // 从缓存区恢复覆盖本地工作文件xx.js
+* git rm xx.js 从工作区及缓存 git删除 再git commit 提交
+* git reset HEAD xx.js //从HEAD区恢复覆盖缓存区工作文件
+* git  log --graph // 查看分支合并图
