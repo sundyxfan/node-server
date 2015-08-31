@@ -50,4 +50,5 @@ ______
 # git reset
 # git branch
 # git test-branch change
-# 在test2 -branch 分支上开发
+# 在test2 -branch 分支上开发 
+# test2 二次开发
