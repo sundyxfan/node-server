@@ -41,6 +41,8 @@ Hi hawx1993! You've successfully authenticated, but GitHub does not provide shel
 * git reset HEAD xx.js //从HEAD区恢复覆盖缓存区工作文件
 * git  log --graph // 查看分支合并图
 * git reflog 查看命令历史
+______
+* 禁用fast forward 模式，git就会在merge 时生成一个新的commit,从分支历史上可以看到分支信息
 
 
 # git diff test
