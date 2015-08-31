@@ -43,6 +43,7 @@ Hi hawx1993! You've successfully authenticated, but GitHub does not provide shel
 * git reflog 查看命令历史
 ______
 * 禁用fast forward 模式，git就会在merge 时生成一个新的commit,从分支历史上可以看到分支信息
+* git rebase master 分支同步master
 
 
 # git diff test
@@ -55,3 +56,4 @@ ______
 # 在test-branch上开发
 # 在test2 -branch 分支上开发 
 # test2 二次开发
+
