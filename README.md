@@ -47,3 +47,4 @@ Hi hawx1993! You've successfully authenticated, but GitHub does not provide shel
 # git diff --staged 缓存区和版本库之间的比较
 # git reset
 # git branch
+# git test-branch change
