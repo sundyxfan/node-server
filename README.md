@@ -40,3 +40,7 @@ Hi hawx1993! You've successfully authenticated, but GitHub does not provide shel
 * git rm xx.js 从工作区及缓存 git删除 再git commit 提交
 * git reset HEAD xx.js //从HEAD区恢复覆盖缓存区工作文件
 * git  log --graph // 查看分支合并图
+
+
+# git diff test
+# git diff --staged 缓存区和版本库之间的比较
